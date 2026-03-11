@@ -6,49 +6,58 @@
     <title>BG - Kazinczy</title>
     <link rel="stylesheet" href="stilus.css">
 </head>
-<body>
+<body class="oldal-elrendezes">
 
-    <header>
-        <nav>
-            <a href="index.html">⬅ Vissza a hírfolyamhoz</a>
+    <aside class="bal-menu">
+        <div class="logo-helye">✖</div>
+        <nav class="ikonok">
+            <a href="index.html" title="Főoldal"><img src="" alt="🏠"></a>
+            <a href="profil_valaszto.html" title="Profilok"><img src="" alt="👤"></a>
+            <a href="uzenetek.html" title="Üzenetek"><img src="" alt="📩"></a>
         </nav>
-    </header>
+        <div class="nav-felirat">nav</div>
+    </aside>
 
-    <main class="profile-container">
-        <section class="Pinfo">
-            <div class="Ppic">
-                <img src="kazinczy.jpg" alt="Kazinczy Ferenc" style="width:150px; border-radius:50%;">
-            </div>
-            <div class="profil">
-                <h2>kazinczy_ferenc</h2>
-                <p><strong>Szlogen:</strong> A magyar nyelvet fejleszteni kell.</p>
-                <p><strong>Foglalkozás:</strong> író, nyelvújító</p>
-                <p><strong>Hobbi:</strong> írás, könyvek olvasása, levelezés más írókkal</p>
-                <div class="stats">
-                    <span><strong>10</strong> bejegyzés</span>
-                    <span><strong>16</strong> követő</span>
-                    <span><strong>9</strong> követés</span>
+    <div class="tartalom-resz">
+        
+        <header class="felso-valaszto">
+            <a href="index.html" class="tab">Hírfolyam</a>
+            <a href="kazinczy.html" class="tab aktiv">Profil</a>
+        </header>
+
+        <main class="profil-belso">
+            <section class="adatok-kontener">
+                <div class="kep-es-stat">
+                    <img src="kazinczy.jpg" alt="Kazinczy Ferenc" class="profil-kep">
+                    <div class="stat-sor">
+                        <span>10 bejegyzés</span>
+                        <span>16 követő</span>
+                        <span>11 követés</span>
+                    </div>
                 </div>
-            </div>
-        </section>
+                
+                <div class="szoveges-infok">
+                    <p><strong>Felhasználónév:</strong> kazinczy_ferenc</p>
+                    <p><strong>Szlogen:</strong> A magyar nyelvet fejleszteni kell.</p>
+                    <p><strong>Foglalkozás:</strong> író, nyelvújító</p>
+                    <p><strong>Hobbik:</strong> írás, könyvek olvasása, levelezés</p>
+                    <p><strong>Bemutatkozás:</strong><br>
+                    Kazinczy Ferenc vagyok. A magyar irodalommal és főleg a nyelv fejlesztésével foglalkozom. Szerintem fontos, hogy a magyar nyelv gazdagabb legyen, ezért sok új szó és kifejezés született a nyelvújítás idején.</p>
+                </div>
+            </section>
 
-        <section class="bio">
-            <p>Kazinczy Ferenc vagyok. A magyar irodalommal és főleg a nyelv fejlesztésével foglalkozom. Szerintem fontos, hogy a magyar nyelv gazdagabb legyen, ezért sok új szó és kifejezés született a nyelvújítás idején. Sokat levelezek más írókkal és gyakran beszélgetünk arról, hogyan lehetne jobb a magyar irodalom.</p>
-        </section>
-
-        <hr>
-
-        <article class="post">
-            <div class="post-content">
-                <p>Mostanában sokat gondolkodom a magyar nyelvről. Szerintem fontos, hogy fejlődjön és új szavak jelenjenek meg benne. Néha vannak viták erről más írókkal, de ez segít abban, hogy jobb legyen az irodalom. A nyelvújítás szerintem szükséges.</p>
-                <p class="hesteg">#nyelvujitas #magyar #irodalom</p>
-            </div>
-            <div class="komment">
-                <p><strong>csokonai_mihaly:</strong> Érdekes gondolat, a nyelv tényleg sokat változik.</p>
-                <p><strong>kazinczy_ferenc:</strong> Igen, és szerintem ez természetes dolog.</p>
-            </div>
-        </article>
-    </main>
+            <section class="kep-racs">
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+                <div class="negyzet"></div>
+            </section>
+        </main>
+    </div>
 
 </body>
 </html>
