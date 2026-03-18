@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+body{
+    margin: 50px;
+}
+
+header img{
+    max-width: 75px;
+}
