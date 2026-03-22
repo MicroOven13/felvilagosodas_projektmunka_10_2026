@@ -4,7 +4,6 @@
 
 body {
   margin: 20px;
-  border: 3px solid rgb(255, 255, 255);
   padding: 10px;
   background-color: rgb(17, 17, 17);
 }
@@ -22,7 +21,7 @@ body {
   position: fixed;
   display: grid;
   grid-template-rows: auto;
-  margin-top: 200px;
+  margin-top: 300px;
   gap: 10px;
 }
 
@@ -75,11 +74,26 @@ body {
     padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
 }
 
+.post{
+    text-align: center;
+}
+
+.post .profillec a{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 40px 400px;
+    align-items:center;
+}
+
+.post .profillec .nev{
+    color:white;
+}
+
+.post .profillec .ido{
+    color:rgb(122, 122, 122)
+}
+
 .oldal {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
-}
-
-.post img {
-  height: 1000px;
 }
