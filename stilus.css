@@ -32,3 +32,48 @@ body {
     background-color: #1a1a1a;
     border-radius: 10px;
 }
+.tartalom {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profil-fejlec {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 50px;
+}
+
+.profilkep {
+    width: 100px;
+    height: 100px;
+    background-color: #262626;
+    border-radius: 90px;
+}
+
+.sor1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.nev {
+    font-size: 20px;
+}
+
+.gomb {
+    background-color: #363636;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.statisztika {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 20px;
+}
