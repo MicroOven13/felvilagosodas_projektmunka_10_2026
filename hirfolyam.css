@@ -3,14 +3,14 @@
 }
 
 body {
-  margin: 20px;
-  padding: 10px;
+  margin: 1.5vw;
+  padding: 1vw;
   background-color: rgb(17, 17, 17);
 }
 
 #insta {
   position: fixed;
-  width: 40px;
+  width: 2vw;
 }
 
 .oldalnav {
@@ -21,13 +21,13 @@ body {
   position: fixed;
   display: grid;
   grid-template-rows: auto;
-  margin-top: 300px;
-  gap: 10px;
+  margin-top: 30vh;
+  gap: 1.5vh;
 }
 
 .gombok a {
   display: grid;
-  grid-template-columns: 40px auto;
+  grid-template-columns: 2vw auto;
   text-decoration: none;
 }
 
@@ -35,17 +35,17 @@ body {
   color: white;
   font-size: 20px;
   margin: auto;
-  margin-left: 20px;
+  margin-left: 1vw;
 }
 
 .gombok img {
-  width: 40px;
+  width: 2vw;
 }
 
 .felso_resz {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  margin: 50px 200px 25px 200px;
+  margin: 3vw 9vw 3vw 9vw;
   padding-top: 25px;
   border-top: 1px solid rgb(109, 109, 109);
 }
@@ -62,9 +62,9 @@ body {
 
 .felso_resz img {
   background-color: white;
-  width: 80px;
+  width: 5vw;
   border-radius: 50px;
-  border: 3px solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
+  border: 0.25vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
   background-image: 
     linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
     /* Belső tartalom színe */
