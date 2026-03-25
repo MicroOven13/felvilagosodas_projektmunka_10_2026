@@ -43,9 +43,10 @@ body {
 }
 
 .felso_resz {
+  margin: auto;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  margin: 3vw 9vw 3vw 9vw;
+  margin: auto;
   padding-top: 25px;
   border-top: 1px solid rgb(109, 109, 109);
 }
@@ -76,24 +77,60 @@ body {
 
 .post{
     text-align: center;
+    max-width: 50vw;
+}
+
+#postkep{
+  max-width: 100%;
+  width: 30vw;
+}
+
+.post .profillec{
+  width: 30vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  height: 7vh;
 }
 
 .post .profillec a{
     text-decoration: none;
     display: grid;
-    grid-template-columns: 40px 400px;
+    grid-template-columns: 3.1vw auto;
     align-items:center;
+    text-align: left;
 }
 
 .post .profillec .nev{
     color:white;
+    padding-left: 1vw;
 }
 
 .post .profillec .ido{
     color:rgb(122, 122, 122)
 }
 
+#profilleckep{
+  background-color: white;
+  width: 3vw;
+  border-radius: 50px;
+  border: 0.15vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
+  background-image: 
+    linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
+    /* Belső tartalom színe */
+    linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
+  background-origin: border-box; /* A második háttér a keretig tartson */
+  background-clip:
+    padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
+}
+
 .oldal {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
+}
+
+.alsosav{
+  color:white;
+  text-align: left;
+  margin: auto;
 }
