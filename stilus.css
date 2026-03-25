@@ -77,3 +77,108 @@ body {
     gap: 30px;
     margin-top: 20px;
 }
+.tartalom {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profil-fejlec {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 50px;
+}
+
+.profilkep-helye {
+    width: 150px;
+    height: 150px;
+    background-color: #262626;
+    border-radius: 100px;
+}
+
+.sor1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.nev {
+    font-size: 20px;
+}
+
+.gomb {
+    background-color: #363636;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.statisztika {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sztori-resz {
+    border-bottom: 1px solid #262626;
+    padding-bottom: 30px;
+}
+
+.kor {
+    text-align: center;
+    width: 80px;
+}
+
+.plusz {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #262626;
+    border-radius: 50px;
+    font-size: 30px;
+    color: gray;
+    display: grid;
+    place-items: center;
+}
+
+.tabok {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+    border-top: 1px solid #262626;
+}
+
+.tabok div {
+    padding: 15px;
+    color: gray;
+    font-size: 13px;
+}
+
+.tabok .aktiv {
+    color: white;
+    border-top: 1px solid white;
+}
+
+.ures {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.kamera-ikon {
+    font-size: 40px;
+    border: 2px solid white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.ures a {
+    color: #0095f6;
+    text-decoration: none;
+}
