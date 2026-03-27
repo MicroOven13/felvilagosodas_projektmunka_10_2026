@@ -151,6 +151,10 @@ body {
   text-align: left;
 }
 
+.postszoveg .hashtag{
+  color: rgb(3, 133, 255);
+}
+
 .postszovege{
   color: rgb(201, 201, 201);
   font-size: 1vw;
