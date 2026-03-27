@@ -6,7 +6,7 @@ body {
   margin: 1.5vw;
   padding: 1vw;
   background-color: rgb(17, 17, 17);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #insta {
@@ -43,8 +43,47 @@ body {
   width: 2vw;
 }
 
-
 .oldal {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
+}
+
+.profilresz {
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+
+.profilresz #felsoresz h3 {
+  grid-area: h3;
+  font-size: 1.4vw;
+  margin-bottom: 0px;
+}
+
+.profilresz #felsoresz img {
+  grid-area: img;
+  width: 7.4vw;
+  border-radius: 10vw;
+}
+
+.profilresz #felsoresz #adatok {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.4vw;
+  font-size: 0.65vw;
+}
+
+.profilresz #felsoresz #adatok .szam {
+  font-weight: bold;
+  font-size: 0.7vw;
+}
+
+.profilresz #felsoresz {
+  display: grid;
+  grid-template-columns: 9vw auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "img h3"
+    "img a";
 }
