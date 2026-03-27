@@ -81,9 +81,25 @@ body {
 
 .profilresz #felsoresz {
   display: grid;
-  grid-template-columns: 9vw auto;
+  grid-template-columns: 9vw auto 10vw;
   grid-template-rows: auto auto;
   grid-template-areas:
     "img h3"
     "img a";
+}
+
+.profilresz #gombok{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 0.5vw;
+}
+
+.profilresz #gombok a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    padding: 0.8vw;
+    border-radius: 0.8vw;
 }
