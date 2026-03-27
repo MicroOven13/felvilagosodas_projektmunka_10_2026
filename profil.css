@@ -14,10 +14,6 @@ body {
   width: 2vw;
 }
 
-.oldalnav {
-  margin-right: 300px;
-}
-
 .gombok {
   position: fixed;
   display: grid;
@@ -102,10 +98,13 @@ body {
     background-color: rgb(46, 46, 46);
     padding: 0.8vw;
     border-radius: 0.8vw;
+    font-size: 0.8vw;
 }
 
 .profilresz #highlights{
     margin: 3vh 0vh 0vh 2vh;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 .profilresz #highlights img{
@@ -115,7 +114,18 @@ body {
 }
 
 .profilresz #highlights p{
-    padding: 0vh 0vh 0vh 2.9vh;
+    padding: 0vh 0vh 0vh 1.7vw;
     margin: 0.5vh 0vh 0vh 0vh;
     font-size: 0.7vw;
+}
+
+.bejegyzesek #valaszto{
+    text-align: center;
+    border-bottom: 0.1vw solid rgb(90, 90, 90);
+    margin: 0;
+    padding: 0;
+}
+
+.bejegyzesek #valaszto img{
+    width: 5.5vw;
 }
