@@ -129,3 +129,15 @@ body {
 .bejegyzesek #valaszto img{
     width: 5.5vw;
 }
+
+.bejegyzesek #posztok{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1px;
+}
+
+.bejegyzesek #posztok img{
+    max-width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+}
