@@ -6,7 +6,7 @@ body {
   margin: 1.5vw;
   padding: 1vw;
   background-color: rgb(17, 17, 17);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #insta {
@@ -44,18 +44,18 @@ body {
   grid-template-columns: 2fr 3fr 2fr;
 }
 
-article iframe{
-    width: 50vw;
-    height: 89vh;
+article iframe {
+  width: 50vw;
+  height: 89vh;
 }
 
-#instaprofilkep{
+#instaprofilkep {
   width: 3.2vw;
   border-radius: 50px;
 }
 
-.instaprofil{
-  color:white;
+.instaprofil {
+  color: white;
   text-align: left;
   display: grid;
   grid-template-columns: 3vw 7vw 7vw;
@@ -64,60 +64,60 @@ article iframe{
   padding-top: 5vh;
 }
 
-.instaprofil span{
+.instaprofil span {
   margin: auto;
 }
 
-#username{
+#username {
   font-weight: bold;
   font-size: 0.8vw;
 }
 
-#change{
+#change {
   color: rgb(87, 168, 238);
   font-size: 0.8vw;
 }
 
-#change:hover{
+#change:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width:768px){
-  .oldal{
+@media screen and (max-width: 768px) {
+  .oldal {
     grid-template-columns: 1fr;
   }
 
   #insta {
-  width: 0vw;
-}
+    width: 0vw;
+  }
 
   .gombok {
-  grid-template-rows: auto;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
-  margin-top: 91vh;
-  gap: 4vw;
-  background-color: rgb(17, 17, 17);
-  padding: 2vh 0vh 10vh 0vh;
-}
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 91vh;
+    gap: 4vw;
+    background-color: rgb(17, 17, 17);
+    padding: 2vh 0vh 10vh 0vh;
+  }
 
-article iframe{
+  article iframe {
     width: 96vw;
     margin: auto;
-}
+  }
 
-.gombok span {
-  font-size: 1.3vw;
-}
+  .gombok span {
+    font-size: 1.3vw;
+  }
 
-aside img{
-  max-width: 0px;
-}
+  aside img {
+    max-width: 0px;
+  }
 
-#username{
-  font-size: 0;
-}
+  #username {
+    font-size: 0;
+  }
 
-#change{
-  font-size: 0;
-}
+  #change {
+    font-size: 0;
+  }
 }

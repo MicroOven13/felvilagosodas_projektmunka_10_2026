@@ -1,63 +1,62 @@
-article{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2vw;
-    margin-top: 7vh;
+article {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2vw;
+  margin-top: 7vh;
 }
 
-.profilvalaszto{
-    border: 2px solid white;
-    background-color: rgb(32, 32, 32);;
-    border-radius: 0.2vw;
-    margin: auto;
-    display: grid;
-    padding: 1vw;
+.profilvalaszto {
+  border: 2px solid white;
+  background-color: rgb(32, 32, 32);
+  border-radius: 0.2vw;
+  margin: auto;
+  display: grid;
+  padding: 1vw;
 }
 
-.profilvalaszto a{
-    display: grid;
-    grid-template-columns: 6.5vw auto;
-    text-decoration: none;
-    color: white;
+.profilvalaszto a {
+  display: grid;
+  grid-template-columns: 6.5vw auto;
+  text-decoration: none;
+  color: white;
 }
 
-.profilvalaszto img{
-    width: 5vw;
-    border-radius: 50vw;
+.profilvalaszto img {
+  width: 5vw;
+  border-radius: 50vw;
 }
 
-.keresesusername{
-    margin: auto;
-    font-weight: bold;
-    font-size: 1.3vw;
+.keresesusername {
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.3vw;
 }
 
-.profilvalaszto:hover{
-    background-color: rgb(97, 97, 97);;
+.profilvalaszto:hover {
+  background-color: rgb(97, 97, 97);
 }
 
-@media screen and (max-width:768px){
-    article{
-        gap: 1vw;
-    }
+@media screen and (max-width: 768px) {
+  article {
+    gap: 1vw;
+  }
 
-    .profilvalaszto{
+  .profilvalaszto {
     border: 4px solid white;
     border-radius: 0.4vw;
     padding: 2vw;
-}
+  }
 
-.profilvalaszto a{
+  .profilvalaszto a {
     grid-template-columns: 13vw auto;
-}
+  }
 
-.profilvalaszto img{
+  .profilvalaszto img {
     width: 10vw;
     border-radius: 50vw;
-}
+  }
 
-.keresesusername{
+  .keresesusername {
     font-size: 2vw;
-}
-
+  }
 }

@@ -6,7 +6,7 @@ body {
   margin: 1.5vw;
   padding: 1vw;
   background-color: rgb(17, 17, 17);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #insta {
@@ -55,8 +55,8 @@ body {
   text-align: center;
 }
 
-.felso_resz p{
-    margin-top: 0px;
+.felso_resz p {
+  margin-top: 0px;
 }
 
 .felso_resz img {
@@ -64,7 +64,7 @@ body {
   width: 5vw;
   border-radius: 10vw;
   border: 0.25vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
-  background-image: 
+  background-image:
     linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
     /* Belső tartalom színe */
     linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
@@ -73,21 +73,21 @@ body {
     padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
 }
 
-.post{
-    text-align: center;
-    max-width: 30vw;
-    margin: auto;
-    padding-bottom: 5vh;
+.post {
+  text-align: center;
+  max-width: 30vw;
+  margin: auto;
+  padding-bottom: 5vh;
 }
 
-#postkep{
+#postkep {
   max-width: 100%;
   width: 30vw;
   border: 1px solid rgb(73, 73, 73);
   border-radius: 0.4vw;
 }
 
-.post .profillec{
+.post .profillec {
   width: 30vw;
   display: grid;
   grid-template-columns: auto auto;
@@ -96,30 +96,30 @@ body {
   padding-left: 0.5vw;
 }
 
-.post .profillec a{
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 3vw auto;
-    align-items:center;
-    text-align: left;
-    font-size: 1.1vw;
+.post .profillec a {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 3vw auto;
+  align-items: center;
+  text-align: left;
+  font-size: 1.1vw;
 }
 
-.post .profillec .nev{
-    color:white;
-    padding-left: 1vw;
+.post .profillec .nev {
+  color: white;
+  padding-left: 1vw;
 }
 
-.post .profillec .ido{
-    color:rgb(122, 122, 122)
+.post .profillec .ido {
+  color: rgb(122, 122, 122);
 }
 
-#profilleckep{
+#profilleckep {
   background-color: white;
   width: 3.2vw;
   border-radius: 10vw;
   border: 0.15vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
-  background-image: 
+  background-image:
     linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
     /* Belső tartalom színe */
     linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
@@ -133,8 +133,8 @@ body {
   grid-template-columns: 2fr 3fr 2fr;
 }
 
-.alsosav{
-  color:white;
+.alsosav {
+  color: white;
   text-align: left;
   display: grid;
   grid-template-columns: 2.4vw 2vw 2vw 2vw;
@@ -142,36 +142,36 @@ body {
   font-size: 1.1vw;
 }
 
-.alsosav img{
+.alsosav img {
   width: 2.4vw;
 }
 
-.postszoveg{
+.postszoveg {
   color: white;
   text-align: left;
 }
 
-.postszoveg .hashtag{
+.postszoveg .hashtag {
   color: rgb(3, 133, 255);
 }
 
-.postszovege{
+.postszovege {
   color: rgb(201, 201, 201);
   font-size: 1vw;
 }
 
-.szovegnev{
+.szovegnev {
   font-weight: bold;
   font-size: 1vw;
 }
 
-#instaprofilkep{
+#instaprofilkep {
   width: 3.2vw;
   border-radius: 50px;
 }
 
-.instaprofil{
-  color:white;
+.instaprofil {
+  color: white;
   text-align: left;
   display: grid;
   grid-template-columns: 3vw 7vw 7vw;
@@ -180,111 +180,110 @@ body {
   padding-top: 5vh;
 }
 
-.instaprofil span{
+.instaprofil span {
   margin: auto;
 }
 
-#username{
+#username {
   font-weight: bold;
   font-size: 0.8vw;
 }
 
-#change{
+#change {
   color: rgb(87, 168, 238);
   font-size: 0.8vw;
 }
 
-#change:hover{
+#change:hover {
   text-decoration: underline;
 }
 
-#h1{
+#h1 {
   color: white;
   text-align: center;
   margin-top: 40vh;
 }
 
-@media screen and (max-width:768px){
-  .oldal{
+@media screen and (max-width: 768px) {
+  .oldal {
     grid-template-columns: 1fr;
   }
 
   #insta {
-  width: 0vw;
-}
+    width: 0vw;
+  }
 
   .gombok {
-  grid-template-rows: auto;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
-  margin-top: 91vh;
-  gap: 4vw;
-  background-color: rgb(17, 17, 17);
-  padding: 2vh 0vh 10vh 0vh;
-}
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 91vh;
+    gap: 4vw;
+    background-color: rgb(17, 17, 17);
+    padding: 2vh 0vh 10vh 0vh;
+  }
 
-.felso_resz {
-  margin: 0vw 5vw 0vw 4vw;
-}
+  .felso_resz {
+    margin: 0vw 5vw 0vw 4vw;
+  }
 
-.felso_resz img{
-  width: 8vw;
-  border: 0.4vw solid transparent;
-}
+  .felso_resz img {
+    width: 8vw;
+    border: 0.4vw solid transparent;
+  }
 
-.post{
-  max-width: 60vw;
-}
+  .post {
+    max-width: 60vw;
+  }
 
-#postkep{
-  width: 60vw;
-}
+  #postkep {
+    width: 60vw;
+  }
 
-.post .profillec{
-  width: 60vw;
-}
+  .post .profillec {
+    width: 60vw;
+  }
 
-.post .profillec a{
+  .post .profillec a {
     font-size: 1.6vw;
     grid-template-columns: 5vw auto;
-}
+  }
 
-.alsosav{
-  text-align: left;
-  grid-template-columns: 4vw 3.4vw 3.5vw 4vw;
-  font-size: 2vw;
-}
+  .alsosav {
+    text-align: left;
+    grid-template-columns: 4vw 3.4vw 3.5vw 4vw;
+    font-size: 2vw;
+  }
 
-.alsosav img{
-  width: 4vw;
-}
+  .alsosav img {
+    width: 4vw;
+  }
 
-#profilleckep{
-  width: 5vw;
-  border: 0.25vw solid transparent;
-}
+  #profilleckep {
+    width: 5vw;
+    border: 0.25vw solid transparent;
+  }
 
-.postszovege{
-  font-size: 1.5vw;
-}
+  .postszovege {
+    font-size: 1.5vw;
+  }
 
-.szovegnev{
-  font-size: 1.5vw;
-}
+  .szovegnev {
+    font-size: 1.5vw;
+  }
 
-.gombok span {
-  font-size: 1.3vw;
-}
+  .gombok span {
+    font-size: 1.3vw;
+  }
 
-aside img{
-  max-width: 0px;
-}
+  aside img {
+    max-width: 0px;
+  }
 
-#username{
-  font-size: 0;
-}
+  #username {
+    font-size: 0;
+  }
 
-#change{
-  font-size: 0;
-}
-
+  #change {
+    font-size: 0;
+  }
 }
