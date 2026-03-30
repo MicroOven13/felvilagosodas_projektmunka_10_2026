@@ -225,7 +225,7 @@ body {
 }
 
 .post{
-    max-width: 60vw;
+  max-width: 60vw;
 }
 
 #postkep{
@@ -234,6 +234,34 @@ body {
 
 .post .profillec{
   width: 60vw;
+}
+
+.post .profillec a{
+    font-size: 1.6vw;
+    grid-template-columns: 5vw auto;
+}
+
+.alsosav{
+  text-align: left;
+  grid-template-columns: 4vw 3.4vw 3.5vw 4vw;
+  font-size: 2vw;
+}
+
+.alsosav img{
+  width: 4vw;
+}
+
+#profilleckep{
+  width: 5vw;
+  border: 0.25vw solid transparent;
+}
+
+.postszovege{
+  font-size: 1.5vw;
+}
+
+.szovegnev{
+  font-size: 1.5vw;
 }
 
 .gombok span {
