@@ -216,10 +216,25 @@ body {
   .gombok {
     grid-template-rows: auto;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    margin-top: 91vh;
     gap: 4vw;
     background-color: rgb(17, 17, 17);
-    padding: 2vh 0vh 10vh 0vh;
+    padding: 2vw 22vw 100vw 22vw;
+    align-items: center;
+    margin-top: 0;
+    margin: 90vh -5vw 2vw -5vw;
+  }
+
+  .gombok span {
+    font-size: 0vw;
+  }
+
+  .gombok a{
+    grid-template-columns: auto;
+  }
+
+  .gombok img{
+    width: 4vw;
+    height: 4.3vw;
   }
 
   .felso_resz {
@@ -269,10 +284,6 @@ body {
 
   .szovegnev {
     font-size: 1.5vw;
-  }
-
-  .gombok span {
-    font-size: 1.3vw;
   }
 
   aside img {
