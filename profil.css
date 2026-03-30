@@ -141,3 +141,85 @@ body {
     height: 100%;
     border: 1px solid grey;
 }
+
+@media screen and (max-width:768px){
+  .oldal{
+    grid-template-columns: 1fr;
+  }
+
+  #insta {
+  width: 0vw;
+}
+
+  .gombok {
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-top: 91vh;
+  gap: 4vw;
+  background-color: rgb(17, 17, 17);
+  padding: 2vh 0vh 10vh 0vh;
+}
+
+.gombok span {
+  font-size: 1.3vw;
+}
+
+.profilresz{
+  grid-template-columns: 1fr;
+}
+
+.profilresz #felsoresz h3 {
+  font-size: 3vw;
+}
+
+.profilresz #felsoresz img {
+  width: 16vw;
+  border-radius: 10vw;
+}
+
+.profilresz #felsoresz #adatok {
+  gap: 1.4vw;
+  font-size: 1.3vw;
+}
+
+.profilresz #felsoresz #adatok .szam {
+  font-size: 1.4vw;
+}
+
+.profilresz #gombok{
+    margin-top: 2vh;
+    gap: 0.5vw;
+}
+
+.profilresz #gombok a{
+    border-radius: 0.8vw;
+    font-size: 1.6vw;
+}
+
+.profilresz #highlights img{
+    width: 8vw;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 30vw;
+}
+
+.profilresz #highlights p{
+    padding: 0vh 0vh 0vh 3.4vw;
+    margin: 0.5vh 0vh 0vh 0vh;
+    font-size: 1.4vw;
+}
+
+.bejegyzesek #valaszto{
+    border-bottom: 0.1vw solid rgb(90, 90, 90);
+    margin: 0;
+    padding: 0;
+
+}
+
+.bejegyzesek #valaszto img{
+    width: 9vw;
+}
+
+.profilresz #felsoresz {
+  grid-template-columns: 20vw auto 10vw;
+}
+}

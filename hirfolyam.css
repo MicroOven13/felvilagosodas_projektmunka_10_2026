@@ -197,3 +197,47 @@ body {
 #change:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width:768px){
+  .oldal{
+    grid-template-columns: 1fr;
+  }
+
+  #insta {
+  width: 0vw;
+}
+
+  .gombok {
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-top: 91vh;
+  gap: 4vw;
+  background-color: rgb(17, 17, 17);
+  padding: 2vh 0vh 10vh 0vh;
+}
+
+.felso_resz {
+  margin: 0vw 5vw 0vw 4vw;
+}
+
+.felso_resz img{
+  width: 8vw;
+}
+
+.post{
+    max-width: 60vw;
+}
+
+#postkep{
+  width: 60vw;
+}
+
+.post .profillec{
+  width: 60vw;
+}
+
+.gombok span {
+  font-size: 1.3vw;
+}
+
+}
