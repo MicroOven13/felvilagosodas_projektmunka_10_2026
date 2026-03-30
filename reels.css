@@ -81,3 +81,43 @@ article iframe{
 #change:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width:768px){
+  .oldal{
+    grid-template-columns: 1fr;
+  }
+
+  #insta {
+  width: 0vw;
+}
+
+  .gombok {
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-top: 91vh;
+  gap: 4vw;
+  background-color: rgb(17, 17, 17);
+  padding: 2vh 0vh 10vh 0vh;
+}
+
+article iframe{
+    width: 96vw;
+    margin: auto;
+}
+
+.gombok span {
+  font-size: 1.3vw;
+}
+
+aside img{
+  max-width: 0px;
+}
+
+#username{
+  font-size: 0;
+}
+
+#change{
+  font-size: 0;
+}
+}
