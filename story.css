@@ -1,0 +1,39 @@
+article {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+article .story {
+  height: 89vh;
+  max-width: 100%;
+  margin: auto;
+}
+
+.gombb {
+  padding-top: 45vh;
+}
+
+aside {
+  position: fixed;
+  right: 2vw;
+}
+
+aside img {
+  width: 3.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .oldal {
+    grid-template-rows: auto auto;
+  }
+
+  #insta {
+    width: 4vw;
+  }
+
+  aside img {
+    width: 5vw;
+    max-width: 5vw;
+  }
+}
