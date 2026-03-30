@@ -228,6 +228,7 @@ body {
 
 .felso_resz img{
   width: 8vw;
+  border: 0.4vw solid transparent;
 }
 
 .post{
