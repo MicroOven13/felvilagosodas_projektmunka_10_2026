@@ -1,9 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Nagy Gergely - BB</title>
-    <link rel="stylesheet" href="stilus.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NG - BB</title>
+    <link rel="stylesheet" href="profil.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -19,60 +24,80 @@
     />
     <link rel="manifest" href="kepek/favicon/site.webmanifest" />
   </head>
+
   <body>
     <div class="oldal">
-      <div class="bal-menu">
-        <h1 class="logo"><img src="kepek/insta.png" alt="" /></h1>
+      <nav class="oldalnav">
+        <a href="index.html"
+          ><img id="insta" src="kepek/insta.png" alt="insta kep"
+        /></a>
         <div class="gombok">
-          <p><a href="hirfolyam.html">🏠 Kezdőlap</a></p>
-          <a href="kereses.html"><p>🔍 Keresés</p></a>
-          <p>🧭 Felfedezés</p>
-          <p>🎬 Reels</p>
-          <p>✉ Üzenetek</p>
-          <p>♡ Értesítések</p>
-          <p>⊕ Létrehozás</p>
-          <p>👤 Profil</p>
+          <a href="index.html" class="btn">
+            <img src="kepek/home.png" alt="icon" />
+            <span>Főoldal</span>
+          </a>
+          <a href="reels.html" class="btn">
+            <img src="kepek/reels.png" alt="icon" />
+            <span>Reels</span>
+          </a>
+          <a href="uzenetek.html" class="btn">
+            <img src="kepek/messages.png" alt="icon" />
+            <span>Üzenetek</span>
+          </a>
+          <a href="kereses.html" class="btn">
+            <img src="kepek/search.png" alt="icon" />
+            <span>Keresés</span>
+          </a>
+          <a href="felfedezes.html" class="btn">
+            <img src="kepek/explore.png" alt="icon" />
+            <span>Felfedezés</span>
+          </a>
+          <a href="ertesitesek.html" class="btn">
+            <img src="kepek/notifications.png" alt="icon" />
+            <span>Értesítések</span>
+          </a>
+          <a href="letrehozas.html" class="btn">
+            <img src="kepek/create.png" alt="icon" />
+            <span>Létrehozás</span>
+          </a>
+          <a href="jezusprofil.html" class="btn">
+            <img src="kepek/profile.png" alt="icon" />
+            <span>Profil</span>
+          </a>
         </div>
-        <div class="alul">Továbbiak</div>
-      </div>
-      <div class="tartalom">
-        <div class="profil-fejlec">
-          <div class="profilkep"></div>
-          <div class="szoveg">
-            <div class="sor1">
-              <span class="nev">Kazinczy Ferenc</span>
-              <button class="gomb">Profil módosítása</button>
-              <button class="gomb">Archívum</button>
-              <span>⚙</span>
-            </div>
-            <div class="statisztika">
-              <span>1 bejegyzés</span>
-              <span>13 követő</span>
-              <span>1 követés</span>
+      </nav>
+      <article>
+        <section class="profilresz">
+          <div id="felsoresz">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Don%C3%A1t_Kazinczy_1812_A.jpg" alt="Kazinczy" />
+            <h3>kazinczy.ferenc67</h3>
+            <div id="adatok">
+              <span><span class="szam">2 </span>bejegyzés</span>
+              <span><span class="szam">123 </span>követő</span>
+              <span><span class="szam">382 </span>követés</span>
             </div>
           </div>
-        </div>
-
-        <div class="sztori-resz">
-          <div class="kor">
-            <div class="plusz">+</div>
+          <div id="gombok">
+            <a href="#">Profil módosítása</a>
+            <a href="#">Archívum megtekintése</a>
+          </div>
+          <div id="highlights">
+            <img src="kepek/highlights.png" alt="highlights" />
             <p>Új</p>
           </div>
-        </div>
-
-        <div class="tabok">
-          <a href="hirfolyam.html"><div class="aktiv">▦ BEJEGYZÉSEK</div></a>
-          <div>🔖 MENTVE</div>
-          <div>👤 MEGJELÖLVE</div>
-        </div>
-
-        <div class="ures">
-          <div class="kamera-ikon">📷</div>
-          <h2>Fényképek megosztása</h2>
-          <p>Amikor fényképeket osztasz meg, azok itt lesznek.</p>
-          <a href="fenykep.html">Oszd meg az elsőt!</a>
-        </div>
-      </div>
+        </section>
+        <section class="bejegyzesek">
+          <div id="valaszto">
+            <img src="kepek/valaszto1.png" alt="1" />
+            <img src="kepek/valaszto2.png" alt="2" />
+            <img src="kepek/valaszto3.png" alt="3" />
+          </div>
+          <div id="posztok">
+            <img src="kepek/instapost/kazinczy poszt 1.png" alt="kep" />
+            <img src="kepek/instapost/kaz 2.png" alt="kep" />
+          </div>
+        </section>
+      </article>
     </div>
   </body>
 </html>
