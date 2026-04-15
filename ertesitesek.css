@@ -1,0 +1,34 @@
+.oldal {
+    display: grid;
+    
+    grid-template-columns: auto 1fr 350px;
+    min-height: 100vh;
+    background-color: #000; 
+    color: #fff;
+}
+
+
+article {
+    border-right: 1px solid #262626;
+    padding: 40px 20px;
+    max-width: 600px;
+    justify-self: center; 
+    width: 100%;
+}
+
+article h1#csa::after {
+    content: "Értesítések";
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.csa {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Ikon/Kép helye és a szöveg */
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    transition: background 0.2s;
+    cursor: pointer;
