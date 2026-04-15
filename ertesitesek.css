@@ -26,16 +26,19 @@ article h1#csa::after {
 
 .csa {
     display: grid;
-    grid-template-columns: auto 1fr; /* Ikon/Kép helye és a szöveg */
+    grid-template-columns: auto 1fr; 
     align-items: center;
     gap: 12px;
     padding: 12px 0;
     transition: background 0.2s;
     cursor: pointer;
+    border: 1px solid white;
+    gap: 10px;
+    margin: 10px;
 }
 
 .csa:hover {
-    background-color: #121212;
+    background-color: #bd6e6e;
 }
 
 .csa p {
@@ -48,4 +51,62 @@ aside {
     display: flex;
     flex-direction: column;
 }
+.instaprofil {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
 
+#instaprofilkep {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #262626;
+}
+
+#username {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#change {
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#change:hover {
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .oldal {
+        grid-template-columns: auto 1fr;
+    }
+    aside {
+        display: none;
+    }
+}
+
+article h1#csa::after {
+    font-size: clamp(24px, 2.5vw, 36px); 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+
+.csa p {
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    color: #efefef;
+}
+
+#username {
+    font-size: clamp(13px, 1.1vw, 16px);
+    font-weight: 600;
+}
