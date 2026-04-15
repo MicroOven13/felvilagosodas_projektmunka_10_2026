@@ -32,3 +32,20 @@ article h1#csa::after {
     padding: 12px 0;
     transition: background 0.2s;
     cursor: pointer;
+}
+
+.csa:hover {
+    background-color: #121212;
+}
+
+.csa p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+aside {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
