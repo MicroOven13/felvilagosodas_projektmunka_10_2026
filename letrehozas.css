@@ -7,6 +7,12 @@ body {
   padding: 1vw;
   background-color: rgb(17, 17, 17);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.oldal {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
 }
 
 #insta {
@@ -26,12 +32,12 @@ body {
   display: grid;
   grid-template-columns: 2vw auto;
   text-decoration: none;
+  align-items: center;
 }
 
 .gombok span {
   color: white;
   font-size: 1.2vw;
-  margin: auto;
   margin-left: 1vw;
 }
 
@@ -39,135 +45,31 @@ body {
   width: 2vw;
 }
 
-.felso_resz {
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  margin: auto;
-  padding-top: 25px;
-  border-top: 1px solid rgb(109, 109, 109);
-  font-size: 1.14vw;
-}
-
-.felso_resz a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.felso_resz p {
-  margin-top: 0px;
-}
-
-.felso_resz img {
-  background-color: white;
-  width: 5vw;
-  border-radius: 10vw;
-  border: 0.25vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
-  background-image:
-    linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
-    /* Belső tartalom színe */
-    linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
-  background-origin: border-box; /* A második háttér a keretig tartson */
-  background-clip:
-    padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
-}
-
-.post {
-  text-align: center;
-  max-width: 30vw;
-  margin: auto;
-  padding-bottom: 5vh;
-}
-
-#postkep {
-  max-width: 100%;
-  width: 30vw;
-  border: 1px solid rgb(73, 73, 73);
-  border-radius: 0.4vw;
-}
-
-.post .profillec {
-  width: 30vw;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: auto;
-  height: 8vh;
-  padding-left: 0.5vw;
-}
-
-.post .profillec a {
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 3vw auto;
+.kozep-tartalom {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: left;
+  padding-top: 5vh;
+}
+
+.alcim {
+  color: rgb(168, 168, 168);
+  margin-bottom: 2vh;
   font-size: 1.1vw;
 }
 
-.post .profillec .nev {
-  color: white;
-  padding-left: 1vw;
-}
-
-.post .profillec .ido {
-  color: rgb(122, 122, 122);
-}
-
-#profilleckep {
-  background-color: white;
-  width: 3.2vw;
-  border-radius: 10vw;
-  border: 0.15vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
-  background-image:
-    linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
-    /* Belső tartalom színe */
-    linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
-  background-origin: border-box; /* A második háttér a keretig tartson */
-  background-clip:
-    padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
-}
-
-.oldal {
+.galeria-grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5vw;
+  width: 100%;
 }
 
-.alsosav {
-  color: white;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 2.4vw 2vw 2vw 2vw;
-  align-items: center;
-  font-size: 1.1vw;
-}
-
-.alsosav img {
-  width: 2.4vw;
-}
-
-.postszoveg {
-  color: white;
-  text-align: left;
-}
-
-.postszoveg .hashtag {
-  color: rgb(3, 133, 255);
-}
-
-.postszovege {
-  color: rgb(201, 201, 201);
-  font-size: 1vw;
-}
-
-.szovegnev {
-  font-weight: bold;
-  font-size: 1vw;
-}
-
-#instaprofilkep {
-  width: 3.2vw;
-  border-radius: 50px;
+.galeria-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid rgb(38, 38, 38);
 }
 
 .instaprofil {
@@ -178,30 +80,30 @@ body {
   padding-left: 6vw;
   justify-items: center;
   padding-top: 5vh;
+  position: sticky;
+  top: 5vh;
 }
 
-.instaprofil span {
-  margin: auto;
+#instaprofilkep {
+  width: 3.2vw;
+  border-radius: 50%;
 }
 
 #username {
   font-weight: bold;
   font-size: 0.8vw;
+  margin: auto;
 }
 
 #change {
   color: rgb(87, 168, 238);
   font-size: 0.8vw;
+  margin: auto;
+  cursor: pointer;
 }
 
 #change:hover {
   text-decoration: underline;
-}
-
-#h1 {
-  color: white;
-  text-align: center;
-  margin-top: 40vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -210,98 +112,43 @@ body {
   }
 
   #insta {
-    width: 0vw;
+    display: none;
   }
 
   .gombok {
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    gap: 4vw;
-    background-color: rgb(17, 17, 17);
-    padding: 2vw 22vw 100vw 22vw;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     margin-top: 0;
-    margin: 90vh -5vw 2vw -5vw;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000;
   }
 
   .gombok span {
-    font-size: 0vw;
+    display: none;
   }
 
-  .gombok a{
+  .gombok a {
     grid-template-columns: auto;
+    justify-content: center;
   }
 
-  .gombok img{
-    width: 4vw;
-    height: 4.3vw;
+  .gombok img {
+    width: 6vw;
   }
 
-  .felso_resz {
-    margin: 0vw 5vw 0vw 4vw;
+  .kozep-tartalom {
+    padding-bottom: 10vh;
   }
 
-  .felso_resz img {
-    width: 8vw;
-    border: 0.4vw solid transparent;
+  .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .post {
-    max-width: 60vw;
-  }
-
-  #postkep {
-    width: 60vw;
-  }
-
-  .post .profillec {
-    width: 60vw;
-  }
-
-  .post .profillec a {
-    font-size: 1.6vw;
-    grid-template-columns: 5vw auto;
-  }
-  .kep-valaszto-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 500px;
-  }
-  .kep-valaszto-grid {
-    width: 200px;
-  }
-  .alsosav {
-    text-align: left;
-    grid-template-columns: 4vw 3.4vw 3.5vw 4vw;
-    font-size: 2vw;
-  }
-
-  .alsosav img {
-    width: 4vw;
-  }
-
-  #profilleckep {
-    width: 5vw;
-    border: 0.25vw solid transparent;
-  }
-
-  .postszovege {
-    font-size: 1.5vw;
-  }
-
-  .szovegnev {
-    font-size: 1.5vw;
-  }
-
-  aside img {
-    max-width: 0px;
-  }
-
-  #username {
-    font-size: 0;
-  }
-
-  #change {
-    font-size: 0;
+  aside {
+    display: none;
   }
 }
