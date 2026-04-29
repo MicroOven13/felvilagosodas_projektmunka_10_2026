@@ -1,105 +1,307 @@
-/* Főoldal rács szerkezete */
-.oldal {
-  display: grid;
-  grid-template-columns: 250px 1fr 320px;
-  background-color: #000;
-  color: #fff;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
 }
-.oldalnav {
-  padding: 20px;
-  border-right: 1px solid #262626;
+
+body {
+  margin: 1.5vw;
+  padding: 1vw;
+  background-color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
 }
 
 #insta {
-  width: 40px;
-  display: block;
-  margin-bottom: 30px;
+  position: fixed;
+  width: 2vw;
 }
 
 .gombok {
+  position: fixed;
   display: grid;
-  gap: 15px;
+  grid-template-rows: auto;
+  margin-top: 30vh;
+  gap: 1.5vh;
 }
-/* AI segitseg */
-.btn {
+
+.gombok a {
   display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: center;
+  grid-template-columns: 2vw auto;
   text-decoration: none;
-  color: #fff;
-  padding: 10px;
 }
 
-.btn img {
-  width: 24px;
+.gombok span {
+  color: white;
+  font-size: 1.2vw;
+  margin: auto;
+  margin-left: 1vw;
 }
 
-article {
-  padding: 40px 20px;
+.gombok img {
+  width: 2vw;
+}
+
+.felso_resz {
+  margin: auto;
   display: grid;
-  justify-items: center; 
+  grid-template-columns: auto auto auto auto auto auto;
+  margin: auto;
+  padding-top: 25px;
+  border-top: 1px solid rgb(109, 109, 109);
+  font-size: 1.14vw;
 }
 
-.kozep-tartalom {
-  width: 100%;
-  max-width: 700px;
-}
-
-.alcim {
+.felso_resz a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
   text-align: center;
-  margin-bottom: 25px;
-  font-size: 18px;
-}
-/* AI segitseg */
-.kep-valaszto-grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr
-}
-/* AI segitseg */
-.kep-valaszto-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1; 
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid #262626;
-}
-aside {
-  padding: 20px;
-  border-left: 1px solid #262626;
 }
 
-.instaprofil {
+.felso_resz p {
+  margin-top: 0px;
+}
+
+.felso_resz img {
+  background-color: white;
+  width: 5vw;
+  border-radius: 10vw;
+  border: 0.25vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
+  background-image:
+    linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
+    /* Belső tartalom színe */
+    linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
+  background-origin: border-box; /* A második háttér a keretig tartson */
+  background-clip:
+    padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
+}
+
+.post {
+  text-align: center;
+  max-width: 30vw;
+  margin: auto;
+  padding-bottom: 5vh;
+}
+
+#postkep {
+  max-width: 100%;
+  width: 30vw;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 0.4vw;
+}
+
+.post .profillec {
+  width: 30vw;
   display: grid;
-  grid-template-columns: 50px 1fr auto;
+  grid-template-columns: auto auto;
+  margin: auto;
+  height: 8vh;
+  padding-left: 0.5vw;
+}
+
+.post .profillec a {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 3vw auto;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.1vw;
+}
+
+.post .profillec .nev {
+  color: white;
+  padding-left: 1vw;
+}
+
+.post .profillec .ido {
+  color: rgb(122, 122, 122);
+}
+
+#profilleckep {
+  background-color: white;
+  width: 3.2vw;
+  border-radius: 10vw;
+  border: 0.15vw solid transparent; /* ez chatgpt, nem tudtam megcsinalni xd*/
+  background-image:
+    linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)),
+    /* Belső tartalom színe */
+    linear-gradient(to right, rgb(255, 145, 2), rgb(207, 2, 248)); /* Maga a színátmenet */
+  background-origin: border-box; /* A második háttér a keretig tartson */
+  background-clip:
+    padding-box, border-box; /* Az első csak a tartalomig, a második a keretig */ /* ez chatgpt, nem tudtam megcsinalni xd*/
+}
+
+.oldal {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+}
+
+.alsosav {
+  color: white;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 2.4vw 2vw 2vw 2vw;
+  align-items: center;
+  font-size: 1.1vw;
+}
+
+.alsosav img {
+  width: 2.4vw;
+}
+
+.postszoveg {
+  color: white;
+  text-align: left;
+}
+
+.postszoveg .hashtag {
+  color: rgb(3, 133, 255);
+}
+
+.postszovege {
+  color: rgb(201, 201, 201);
+  font-size: 1vw;
+}
+
+.szovegnev {
+  font-weight: bold;
+  font-size: 1vw;
 }
 
 #instaprofilkep {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+  width: 3.2vw;
+  border-radius: 50px;
+}
+
+.instaprofil {
+  color: white;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3vw 7vw 7vw;
+  padding-left: 6vw;
+  justify-items: center;
+  padding-top: 5vh;
+}
+
+.instaprofil span {
+  margin: auto;
 }
 
 #username {
-  font-size: 14px;
   font-weight: bold;
+  font-size: 0.8vw;
 }
 
-#change a {
-  color: #0095f6;
-  text-decoration: none;
-  font-size: 12px;
+#change {
+  color: rgb(87, 168, 238);
+  font-size: 0.8vw;
 }
-/* AI segitseg */
-@media (max-width: 1000px) {
+
+#change:hover {
+  text-decoration: underline;
+}
+
+#h1 {
+  color: white;
+  text-align: center;
+  margin-top: 40vh;
+}
+
+@media screen and (max-width: 768px) {
   .oldal {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 1fr;
   }
-  aside {
-    display: none;
+
+  #insta {
+    width: 0vw;
+  }
+
+  .gombok {
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 4vw;
+    background-color: rgb(17, 17, 17);
+    padding: 2vw 22vw 100vw 22vw;
+    align-items: center;
+    margin-top: 0;
+    margin: 90vh -5vw 2vw -5vw;
+  }
+
+  .gombok span {
+    font-size: 0vw;
+  }
+
+  .gombok a{
+    grid-template-columns: auto;
+  }
+
+  .gombok img{
+    width: 4vw;
+    height: 4.3vw;
+  }
+
+  .felso_resz {
+    margin: 0vw 5vw 0vw 4vw;
+  }
+
+  .felso_resz img {
+    width: 8vw;
+    border: 0.4vw solid transparent;
+  }
+
+  .post {
+    max-width: 60vw;
+  }
+
+  #postkep {
+    width: 60vw;
+  }
+
+  .post .profillec {
+    width: 60vw;
+  }
+
+  .post .profillec a {
+    font-size: 1.6vw;
+    grid-template-columns: 5vw auto;
+  }
+  .kep-valaszto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 500px;
+  }
+  .kep-valaszto-grid {
+    width: 200px;
+  }
+  .alsosav {
+    text-align: left;
+    grid-template-columns: 4vw 3.4vw 3.5vw 4vw;
+    font-size: 2vw;
+  }
+
+  .alsosav img {
+    width: 4vw;
+  }
+
+  #profilleckep {
+    width: 5vw;
+    border: 0.25vw solid transparent;
+  }
+
+  .postszovege {
+    font-size: 1.5vw;
+  }
+
+  .szovegnev {
+    font-size: 1.5vw;
+  }
+
+  aside img {
+    max-width: 0px;
+  }
+
+  #username {
+    font-size: 0;
+  }
+
+  #change {
+    font-size: 0;
   }
 }
